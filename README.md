@@ -75,3 +75,18 @@ export default defineConfig([
 =======
 # prompt-library
 >>>>>>> 948d9a577e9d383b032f7517352efca42bcc4785
+A lightweight prompt management app built with React + Vite.
+
+Features:
+- Multi-line prompt support
+- Favorites
+- Search & filtering
+- Dark mode
+- Inline editing
+- Delete confirmation
+- Local persistence
+
+Upcoming:
+- Tag system
+- Expand/collapse prompts
+- Export/import prompts
