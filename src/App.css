@@ -1,0 +1,95 @@
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  color: var(--text);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.inputRow {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+}
+
+button {
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.promptList {
+  list-style: none;
+  padding: 0;
+}
+
+.promptList li {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.promptItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 6px;
+}
+
+
+button, .btn {
+  border: 1px solid var(--border);
+  background: var(--btn);
+  color: var(--text);
+  border-radius: 8px;
+  padding: 8px 10px;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+button:hover, .btn:hover {
+  background: var(--btn-hover);
+}
+
+:root[data-theme="dark"] button:hover,
+:root[data-theme="dark"] .btn:hover {
+  filter: brightness(1.08);
+}
+
+.btn.secondary {
+  opacity: 0.9;
+}
+
+.btn.danger {
+  border-color: #d33;
+}
+
+textarea {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.promptTextBlock {
+  white-space: pre-wrap;   /* preserves new lines */
+  word-break: break-word;  /* prevents overflow */
+}
